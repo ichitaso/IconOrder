@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm -rf /var/mobile/Library/Preferences/com.ichitaso.iconanus.plist
+
+exit 0
