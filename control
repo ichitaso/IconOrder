@@ -4,13 +4,14 @@ Name: IconAnus
 Package: com.ichitaso.iconanus
 Pre-Depends: firmware (>= 13.0)
 Depends: mobilesubstrate
+Provides: me.nepeta.iconstate
 Conflicts: me.nepeta.iconstate
-Replaces: com.ichitaso.iconanus
+Replaces: me.nepeta.iconstate
 Section: Tweaks
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: Preserve custom icon layouts by Springboard Crash or reboots etc
 Depiction: https://cydia.ichitaso.com/depiction/iconanus.html
 Homepage: https://ichitaso.com/
 dev: ichitaso
-Tag: purpose::extension, compatible::ios14
+Tag: purpose::extension, compatible::ios13, compatible::ios14
