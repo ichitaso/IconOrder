@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 rm -rf /var/mobile/Library/Preferences/com.ichitaso.iconanus.plist
 
