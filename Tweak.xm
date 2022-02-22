@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 
-#define PREF_PATH @"/var/mobile/Library/Preferences/com.ichitaso.iconanus.plist"
-#define KEY @"IconAnus"
+#define PREF_PATH @"/var/mobile/Library/Preferences/com.ichitaso.iconorder.plist"
+#define KEY @"IconOrder"
 
 @interface SBIconListGridLayoutConfiguration : NSObject
 @property(nonatomic) NSUInteger numberOfPortraitRows;

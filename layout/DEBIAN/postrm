@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rm -rf /var/mobile/Library/Preferences/com.ichitaso.iconanus.plist
+rm -rf /var/mobile/Library/Preferences/com.ichitaso.iconorder.plist
 
 exit 0

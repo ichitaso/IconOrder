@@ -1,17 +1,17 @@
 Author: ichitaso
-Maintainer: Packix
-Name: IconAnus
-Package: com.ichitaso.iconanus
+Maintainer: Havoc
+Name: IconOrder
+Package: com.ichitaso.iconorder
 Pre-Depends: firmware (>= 12.0)
 Depends: mobilesubstrate
-Provides: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix
-Conflicts: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix
-Replaces: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix
+Provides: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix, com.ichitaso.iconanus
+Conflicts: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix, com.ichitaso.iconanus
+Replaces: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix, com.ichitaso.iconanus
 Section: Tweaks
-Version: 1.0.3
+Version: 1.0.0
 Architecture: iphoneos-arm
 Description: Preserve custom icon layouts by Springboard Crash or reboots etc
-Depiction: https://cydia.ichitaso.com/depiction/iconanus.html
+Depiction: 
 Homepage: https://ichitaso.com/
 dev: ichitaso
-Tag: purpose::extension, compatible::ios13, compatible::ios14
+Tag: purpose::extension, compatible::ios12, compatible::ios13, compatible::ios14
