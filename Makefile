@@ -14,14 +14,5 @@ $(TWEAK_NAME)_CFLAGS = -fobjc-arc
 include $(THEOS)/makefiles/common.mk
 include $(THEOS_MAKE_PATH)/tweak.mk
 
-before-package::
-	sudo chown -R root:wheel $(THEOS_STAGING_DIR)
-	sudo chmod -R 755 $(THEOS_STAGING_DIR)
-	sudo chmod 666 $(THEOS_STAGING_DIR)/DEBIAN/control
-
-after-package::
-	make clean
-	sudo rm -rf .theos/_
-
 after-install::
 	install.exec "killall -9 backboardd"
