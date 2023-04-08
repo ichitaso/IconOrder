@@ -1,5 +1,9 @@
 #!/bin/bash
 
-rm -rf /var/mobile/Library/Preferences/com.ichitaso.iconorder.plist
+declare -a cydia
+cydia=($CYDIA)
+if [[ ${CYDIA+@} ]]; then
+    eval "echo 'finish:restart' >&${cydia[0]}"
+fi
 
 exit 0

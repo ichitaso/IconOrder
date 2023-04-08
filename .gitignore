@@ -5,9 +5,9 @@ debs/*
 *.dylib
 **/.theos/*
 */.theos/*
-*.sublime-workspace
 _/*
 */obj/*
 obj/*
 *.zip
 IconAnus/
+layout/DEBIAN/preinst

@@ -3,15 +3,15 @@ Maintainer: Havoc
 Name: IconOrder
 Package: com.ichitaso.iconorder
 Pre-Depends: firmware (>= 12.0)
-Depends: mobilesubstrate, com.bingner.plutil
+Depends: mobilesubstrate
 Provides: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix, com.ichitaso.iconanus
 Conflicts: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix, com.ichitaso.iconanus
 Replaces: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix, com.ichitaso.iconanus
 Section: Tweaks
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm
 Description: Preserve custom icon layouts by Springboard Crash or reboots etc
 Depiction: 
 Homepage: https://ichitaso.com/
 dev: ichitaso
-Tag: purpose::extension, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15
+Tag: purpose::extension, compatible_min::ios12.0, compatible_max::ios16.3.1

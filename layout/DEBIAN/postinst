@@ -1,7 +1,9 @@
 #!/bin/bash
 
-cd /var/mobile/Library/Preferences
+declare -a cydia
+cydia=($CYDIA)
+if [[ ${CYDIA+@} ]]; then
+    eval "echo 'finish:restart' >&${cydia[0]}"
+fi
 
-plutil -key _NepetaIconState -remove com.apple.springboard.plist || true
-plutil -key _GridiculousIconState -remove com.apple.springboard.plist || true
-plutil -convert binary1 com.apple.springboard.plist || true
+exit 0
