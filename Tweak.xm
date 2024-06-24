@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
+#include <roothide.h>
 
-#define PREF_PATH @"/var/mobile/Library/Preferences/com.ichitaso.iconorder.plist"
+#define PREF_PATH jbroot(@"/var/mobile/Library/Preferences/com.ichitaso.iconorder.plist")
 #define KEY @"IconOrder"
 
 @interface SBIconListGridLayoutConfiguration : NSObject

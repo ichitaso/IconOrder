@@ -1,13 +1,4 @@
-*.o
-.theos/*
-debs/*
+.theos
 *.deb
-*.dylib
-**/.theos/*
-*/.theos/*
-_/*
-*/obj/*
-obj/*
-*.zip
+packages/
 IconAnus/
-layout/DEBIAN/preinst

@@ -1,9 +1,9 @@
 #/bin/sh
 
-export PREFIX=$THEOS/toolchain/Xcode11.xctoolchain/usr/bin/
-make clean
-make package
+make clean package
 
-export -n PREFIX
+make clean package THEOS_PACKAGE_SCHEME=rootless
+
+make clean package THEOS_PACKAGE_SCHEME=roothide
+
 make clean
-make package THEOS_PACKAGE_SCHEME=rootless

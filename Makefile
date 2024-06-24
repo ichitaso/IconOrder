@@ -1,15 +1,18 @@
+ARCHS = arm64 arm64e
+
 DEBUG = 0
 FINALPACKAGE = 1
 
-ARCHS = arm64 arm64e
+INSTALL_TARGET_PROCESSES = SpringBoard
 
 ifeq ($(THEOS_PACKAGE_SCHEME),rootless)
-TARGET = iphone:16.2:15.0
+TARGET = iphone:16.5:15.0
+else ifeq ($(THEOS_PACKAGE_SCHEME),roothide)
+TARGET = iphone:16.5:15.0
 else
+export PREFIX = $(THEOS)/toolchain/Xcode11.xctoolchain/usr/bin/
 TARGET = iphone:14.5:12.0
 endif
-
-THEOS_DEVICE_IP = 192.168.0.12
 
 TWEAK_NAME = IconOrder
 $(TWEAK_NAME)_FILES = Tweak.xm
@@ -30,5 +33,5 @@ after-stage::
 	mv -f $(THEOS_STAGING_DIR)/tmp/preinst ./layout/DEBIAN/preinst
 	rm -rf $(THEOS_STAGING_DIR)/tmp
 
-after-install::
-	install.exec "sbreload"
+after-package::
+	rm -f ./layout/DEBIAN/preinst
