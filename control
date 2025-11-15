@@ -8,11 +8,11 @@ Provides: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfi
 Conflicts: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix, com.ichitaso.iconanus
 Replaces: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix, com.ichitaso.iconanus
 Section: Tweaks
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm
 Description: Preserve custom icon layouts by Springboard Crash or reboots etc
 Depiction: https://cydia.ichitaso.com/depiction/iconorder.html
 SileoDepiction: https://cydia.ichitaso.com/depiction/iconorder.json
 Homepage: https://ichitaso.com/
 dev: ichitaso
-Tag: purpose::extension, compatible_min::ios12.0, compatible_max::ios17.5.1
+Tag: purpose::extension, compatible_min::ios12.0, compatible_max::ios18.2
