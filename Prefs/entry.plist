@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = "IconOrder";
+		cell = PSLinkCell;
+		detail = "IconOrderController";
+		icon = "Icon.png";
+		isController = 1;
+		label = "IconOrder";
+	};
+}

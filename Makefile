@@ -3,9 +3,9 @@ ARCHS = arm64 arm64e
 DEBUG = 0
 FINALPACKAGE = 1
 
-INSTALL_TARGET_PROCESSES = SpringBoard
+INSTALL_TARGET_PROCESSES = backboardd
 
-THEOS_DEVICE_IP = 192.168.0.24
+THEOS_DEVICE_IP = 127.0.0.1 -p 2222
 
 ifeq ($(THEOS_PACKAGE_SCHEME),rootless)
 TARGET = iphone:16.5:15.0
@@ -27,9 +27,12 @@ $(TOOL_NAME)_INSTALL_PATH = /tmp
 $(TOOL_NAME)_CODESIGN_FLAGS = -Sentitlements.xml
 $(TOOL_NAME)_CFLAGS = -fobjc-arc
 
+SUBPROJECTS += Prefs
+
 include $(THEOS)/makefiles/common.mk
 include $(THEOS_MAKE_PATH)/tweak.mk
 include $(THEOS_MAKE_PATH)/tool.mk
+include $(THEOS_MAKE_PATH)/aggregate.mk
 
 after-stage::
 	mv -f $(THEOS_STAGING_DIR)/tmp/preinst ./layout/DEBIAN/preinst
