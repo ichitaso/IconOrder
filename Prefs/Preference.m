@@ -297,6 +297,16 @@ static PSSpecifier *ICOButton(id target, NSString *title, SEL action) {
         spec = [PSSpecifier emptyGroupSpecifier];
         [specifiers addObject:spec];
         
+        spec = [PSSpecifier preferenceSpecifierNamed:@"Source Code"
+                                                      target:self
+                                                         set:NULL
+                                                         get:NULL
+                                                      detail:Nil
+                                                        cell:PSLinkCell
+                                                        edit:Nil];
+        spec->action = @selector(openGithub);
+        [specifiers addObject:spec];
+        
         spec = [PSSpecifier preferenceSpecifierNamed:@"Other Tweaks"
                                               target:self
                                                  set:NULL
@@ -337,6 +347,10 @@ static PSSpecifier *ICOButton(id target, NSString *title, SEL action) {
 
 - (void)respring {
     easy_spawn((const char *[]){jbroot("/usr/bin/killall"), "backboardd", NULL});
+}
+
+- (void)openGithub {
+    [self openURLInBrowser:@"https://github.com/ichitaso/IconOrder"];
 }
 
 - (void)openDaonate {

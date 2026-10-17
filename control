@@ -16,3 +16,4 @@ SileoDepiction: https://cydia.ichitaso.com/depiction/iconorder.json
 Homepage: https://ichitaso.com/
 dev: ichitaso
 Tag: purpose::extension, compatible_min::ios12.0, compatible_max::ios26.2
+Icon: https://raw.githubusercontent.com/ichitaso/IconOrder/refs/heads/main/Prefs/Resources/Icon%403x.png
